@@ -1,0 +1,66 @@
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    card_view:cardBackgroundColor="#BFC9D3"
+    card_view:cardElevation="10dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <!-- Album Cover -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aCover"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Song Title -->
+            <TextView
+                android:id="@+id/songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="#CEBF94"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Artist Name -->
+            <TextView
+                android:id="@+id/songArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:textColor="#93836D"
+                android:padding="2dp" />
+
+            <!-- Album Name -->
+            <TextView
+                android:id="@+id/songAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#93836D"
+                android:textStyle="bold"
+                android:padding="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

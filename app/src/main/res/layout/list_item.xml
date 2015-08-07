@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <!-- Album Image -->
+    <ImageView
+        android:id="@+id/AlbumCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Track Name -->
+        <TextView
+            android:id="@+id/trackName"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:textColor="#CEBF94"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="2dip"
+            android:textColor="#93836D" />
+
+        <!-- Album Name -->
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:textColor="#93836D"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

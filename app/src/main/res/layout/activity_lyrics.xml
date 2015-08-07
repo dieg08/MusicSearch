@@ -1,0 +1,68 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#BFC9D3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/bigCover"
+            android:paddingTop="15dp"/>
+
+        <!-- Track Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center_horizontal"
+            android:text="Large Text"
+            android:id="@+id/trackTitle"
+            android:textColor="#CEBF94" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/by"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#CEBF94" />
+
+        <!-- Lyrics -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/lyrics"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:textColor="#93836D" />
+
+        <!-- URL link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Full Lyrics"
+            android:id="@+id/URL"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff4900"
+            android:padding="30dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="launchBrowser" />
+    </LinearLayout>
+
+</ScrollView>
